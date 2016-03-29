@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imageRendering" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqa-fn-3Us">
+                                <rect key="frame" x="33" y="19" width="64" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="BG8-Qb-V1j"/>
+                                    <constraint firstAttribute="height" constant="60" id="K5O-LD-mjR"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Smiley"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfI-nU-v3u">
+                                <rect key="frame" x="148" y="19" width="59" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="g07-Aq-gSg"/>
+                                    <constraint firstAttribute="height" constant="60" id="hm2-fc-drJ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Smiley"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpk-wg-cHi">
+                                <rect key="frame" x="270" y="19" width="70" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="fA6-C8-I1i"/>
+                                    <constraint firstAttribute="height" constant="60" id="ix5-W4-dlN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="SmileyTemplate"/>
+                            </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5m-Am-Pk6">
+                                <rect key="frame" x="0.0" y="101" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem image="smiley2" id="xwi-hr-azU" userLabel="tbi"/>
+                                    <tabBarItem image="smiley2" id="1hD-aJ-sg8"/>
+                                </items>
+                            </tabBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmileyVector" translatesAutoresizingMaskIntoConstraints="NO" id="3be-UT-anr" userLabel="SmileyVector1">
+                                <rect key="frame" x="20" y="197" width="85" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="ZQW-Wa-BGw"/>
+                                    <constraint firstAttribute="height" constant="76" id="uB8-Fb-6mc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmileyVector" translatesAutoresizingMaskIntoConstraints="NO" id="9qg-LL-sBq" userLabel="SmileyVector2">
+                                <rect key="frame" x="140" y="197" width="173" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="6QL-IL-ZBe"/>
+                                    <constraint firstAttribute="height" constant="168" id="UBZ-64-7UK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aqa-fn-3Us" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="1Qf-H0-u0x"/>
+                            <constraint firstItem="3be-UT-anr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="31B-zp-VuC"/>
+                            <constraint firstItem="9qg-LL-sBq" firstAttribute="leading" secondItem="3be-UT-anr" secondAttribute="trailing" constant="35" id="4iW-CH-rSP"/>
+                            <constraint firstItem="tpk-wg-cHi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="19" id="5T1-Rg-Iik"/>
+                            <constraint firstItem="3be-UT-anr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="177" id="Ccu-KI-2vH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tpk-wg-cHi" secondAttribute="trailing" constant="15" id="Lqe-9B-4Rc"/>
+                            <constraint firstItem="Aqa-fn-3Us" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="19" id="Xbt-Yr-x8m"/>
+                            <constraint firstItem="hfI-nU-v3u" firstAttribute="leading" secondItem="Aqa-fn-3Us" secondAttribute="trailing" constant="51" id="mt9-FU-yX0"/>
+                            <constraint firstItem="3be-UT-anr" firstAttribute="top" secondItem="9qg-LL-sBq" secondAttribute="top" id="vRA-nH-2jK"/>
+                            <constraint firstItem="hfI-nU-v3u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="19" id="ydp-wg-N47"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="b" destination="hfI-nU-v3u" id="9Ft-gy-pLk"/>
+                        <outlet property="tbi" destination="xwi-hr-azU" id="3PH-Gr-zZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322.5" y="300.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Smiley" width="60" height="60"/>
+        <image name="SmileyTemplate" width="60" height="60"/>
+        <image name="SmileyVector" width="151" height="118"/>
+        <image name="smiley2" width="30" height="30"/>
+    </resources>
+</document>
